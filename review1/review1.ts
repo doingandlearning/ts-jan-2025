@@ -1,6 +1,17 @@
 import data from "./todos.json";
+import responseJson from "./response.json";
 
+responseJson;
 data;
+
+type JSON = {
+  todos: {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
+  }[];
+};
 
 interface DataFile {
   todos: Todo[];
