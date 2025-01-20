@@ -8,3 +8,17 @@ function sumValues(dict: { [key: string]: number }): number {
 }
 
 console.log(sumValues(numberDict));
+
+// type Regions = "SE" | "NE" | "Scotland";
+
+// const regions: {
+//   [regionKey: string]: { captial: string; population: number };
+// } = {
+//   SE: "London",
+//   NE: "Salford",
+//   Scotland: "Glasgow",
+// };
+
+// const fixedRegions: Record<Regions, string> = {
+//   SE: "London",
+// };

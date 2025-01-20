@@ -19,7 +19,7 @@ interface NewInterface {}
   };
 
   type BirdType = {
-    wings: 2;
+    wings: 2 | 4 | 6;
   };
 
   interface BirdInterface {
