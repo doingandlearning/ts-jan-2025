@@ -1,3 +1,4 @@
+// @ts-check
 var PI = 3.14;
 
 function getCircleArea(radius) {
