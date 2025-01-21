@@ -5,6 +5,7 @@ import type {
   Square,
   RightTriangle,
   Shape,
+  ValidShape,
 } from "./shape.types";
 
 function getCircleArea(circle: Circle) {
@@ -14,6 +15,7 @@ function getCircleArea(circle: Circle) {
 
 function getRectangleArea(rectangle: Rectangle): number {
   const { length, width } = rectangle;
+  //^?
   return length * width;
 }
 function getSquareArea(square: Square): number {
@@ -36,21 +38,16 @@ function isShape(shape: any): shape is Shape {
   );
 }
 
-export function getArea(shape: unknown) {
-  if (!isShape(shape)) {
-    throw new Error("Need to be a shape");
-  }
-  if (isCircle(shape)) {
-    return getCircleArea(shape);
-  }
+export function getArea(shape: ValidShape) {
   switch (shape.type) {
     case "circle":
-      return getCircleArea(shape as Circle);
+      return getCircleArea(shape);
+    //^?
     case "rectangle":
-      return getRectangleArea(shape as Rectangle);
+      return getRectangleArea(shape);
     case "square":
-      return getSquareArea(shape as Square);
+      return getSquareArea(shape);
     case "rightTriangle":
-      return getRightTriangleArea(shape as RightTriangle);
+      return getRightTriangleArea(shape);
   }
 }

@@ -3,6 +3,8 @@ export interface Shape {
   type: "circle" | "rectangle" | "rightTriangle" | "square";
 }
 
+export type ValidShape = Circle | Rectangle | RightTriangle | Square;
+
 export interface Circle extends Shape {
   type: "circle";
   radius: number;
