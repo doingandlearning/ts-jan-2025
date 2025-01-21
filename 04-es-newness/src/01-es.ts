@@ -55,7 +55,7 @@ const object2 = {
 // 4. Arrow functions
 perimeterOfRect(1, 2);
 
-function perimeterOfRect(length: number, width: number) {
+function perimeterOfRect(length: number, width: number): number {
   return 2 * (length + width);
 }
 
