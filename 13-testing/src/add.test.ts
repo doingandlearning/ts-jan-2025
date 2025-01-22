@@ -23,9 +23,12 @@ const testCases = [
   { a: 0, b: 0, result: 0 },
   { a: Number.MAX_SAFE_INTEGER, b: -1, result: Number.MAX_SAFE_INTEGER - 1 },
 ];
-// test.each(testCases, (testCase) => {
 
-// })
+test.each(testCases)("add($a, $b) = $result", ({ a, b, result }) => {
+  const sum = add(a, b);
+  expect(sum).toEqual(result);
+});
+
 for (const { a, b, result } of testCases) {
   test(`add numbers correctly: ${a} + ${b} = ${result}`, () => {
     const result = add(a, b);
