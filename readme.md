@@ -33,8 +33,8 @@ Unit 7: Async - exploration of the evolution of async in JS
 
 Unit 9: Functional Programming - an exploration on what functional programming is, why it's a helpful paradigm and some practice
 
-Unit 10: Error handling - Considering our error handling approach
-
 Unit 11: Creating types from others - utilities, string literals, keyin, keyof, record
+
+Unit 10: Error handling - Considering our error handling approach
 
 Unit 12: Testing - What are the testing solutions in TS?
