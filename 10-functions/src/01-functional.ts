@@ -13,7 +13,7 @@
 // no side effects
 
 function isValidEmail(email: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  return /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email);
 }
 
 console.log(String(isValidEmail("kevin@kevincunningham.co.uk")));
